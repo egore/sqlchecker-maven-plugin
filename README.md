@@ -1,5 +1,7 @@
 # Usage
 
+From the pom.xml configuration
+
     <build>
         <plugins>
             <plugin>
@@ -25,3 +27,8 @@
             </plugin>
         </plugins>
     </build>
+
+Alternatively using the commandline
+
+     mvn de.egore911.maven:sqlchecker-maven-plugin:check -Dcheck.directories=some/directory/mssql,some/directory/pgsql
+

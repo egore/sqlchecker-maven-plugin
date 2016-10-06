@@ -25,10 +25,10 @@ import java.util.Set;
 @Execute(goal = "check")
 public class SqlCheckerMojo extends AbstractMojo {
 
-    @Parameter
+    @Parameter(property = "check.directories")
     private String[] directories;
 
-    @Parameter(defaultValue = "true")
+    @Parameter(property = "check.fatal", defaultValue = "true")
     private boolean fatal;
 
     public void execute() throws MojoExecutionException {
