@@ -21,7 +21,7 @@ import java.util.Set;
  * @author Christoph Brill &lt;egore911@gmail.com&gt;
  * @since 27.05.15 20:55
  */
-@Mojo(name = "check", defaultPhase = LifecyclePhase.COMPILE)
+@Mojo(name = "check", defaultPhase = LifecyclePhase.COMPILE, threadSafe = true)
 @Execute(goal = "check")
 public class SqlCheckerMojo extends AbstractMojo {
 
